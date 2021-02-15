@@ -1,0 +1,15 @@
+
+{
+    "knime.var.nr_bins": {
+        "type": "integer",
+        "default": 4
+    },
+    "knime.var.nr_clusters": {
+        "type": "integer",
+        "default": 3
+    },
+    "knime.var.plot_title": {
+        "type": "string",
+        "default": "Plot Title"
+    }
+}

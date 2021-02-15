@@ -1,0 +1,20 @@
+nome {
+    color: red;
+}
+
+lugar {
+    color: blue;
+}
+
+.quadra {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.quadra2 {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: grey;
+}

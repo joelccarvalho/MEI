@@ -1,0 +1,28 @@
+{
+  "alunos": [
+    {
+      "nome": "Fernando Pessoa",
+      "id": "PG12345",
+      "curso": "Literatura",
+      "git": "http://github.com"
+    },
+    {
+      "nome": "Joel Carvalho",
+      "id": "PG42837",
+      "curso": "MEI",
+      "git": "link"
+    },
+    {
+      "nome": "Ana",
+      "id": "111",
+      "curso": "ooo",
+      "git": ""
+    },
+    {
+      "nome": "Ana",
+      "id": "A111",
+      "curso": "ooo",
+      "git": ""
+    }
+  ]
+}

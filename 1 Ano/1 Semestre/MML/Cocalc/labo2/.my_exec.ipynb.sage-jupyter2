@@ -1,0 +1,7 @@
+{"backend_state":"running","kernel":"anaconda2020","kernel_state":"idle","kernel_usage":{"cpu":0,"memory":89243648},"metadata":{"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.7.8"}},"trust":true,"type":"settings"}
+{"cell_type":"code","exec_count":0,"id":"1a442d","input":"","pos":2,"type":"cell"}
+{"cell_type":"code","exec_count":35,"id":"62b043","input":"run partitional_correction\n\n","output":{"0":{"name":"stdout","output_type":"stream","text":"number of event: 300 . number of attribute: 2 , number of cluster: 3\n"},"1":{"data":{"image/png":"a71933c44992aba276909776be4bc08c1048249d","text/plain":"<Figure size 864x504 with 1 Axes>"},"exec_count":35,"metadata":{"image/png":{"height":411,"width":712},"needs_background":"light"},"output_type":"execute_result"},"2":{"name":"stdout","output_type":"stream","text":"bye\n"},"3":{"data":{"text/plain":"<Figure size 864x504 with 0 Axes>"},"exec_count":35,"output_type":"execute_result"}},"pos":1,"scrolled":true,"type":"cell"}
+{"cell_type":"raw","id":"3d8c3d","input":"exec ","pos":3,"type":"cell"}
+{"cell_type":"raw","id":"7f329e","input":"","pos":0,"type":"cell"}
+{"id":0,"time":1606500818508,"type":"user"}
+{"last_load":1606506265041,"type":"file"}

@@ -1,0 +1,6 @@
+"base","visibility","dt","timezone","id","name","cod","lon","lat","temp","feels_like","temp_min","temp_max","pressure","humidity","speed","deg","all","type","country","sunrise","sunset"
+"stations",6000,1607608299,0,2732326,"Vila Verde",200,-8.44,41.65,12.490000000000009,11.79000000000002,9.439999999999998,15,1015,100,2.1,230,75,1,"PT",1607586611,1607619812
+"base","visibility","dt","timezone","id","name","cod","lon","lat","temp","feels_like","temp_min","temp_max","pressure","humidity","speed","deg","all","type","country","sunrise","sunset"
+"stations",10000,1607721782,0,2732326,"Vila Verde",200,-8.44,41.65,12.29000000000002,11.689999999999998,10.560000000000002,15,1016,87,1,0,40,1,"PT",1607673060,1607706217
+"base","visibility","dt","timezone","id","name","cod","lon","lat","temp","feels_like","temp_min","temp_max","pressure","humidity","speed","deg","all","type","country","sunrise","sunset"
+"stations",8000,1607788063,0,2732326,"Vila Verde",200,-8.44,41.65,13.439999999999998,11.689999999999998,12.220000000000027,15,1019,87,3.1,200,75,1,"PT",1607759507,1607792624

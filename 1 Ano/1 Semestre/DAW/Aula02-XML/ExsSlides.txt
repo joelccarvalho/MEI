@@ -1,0 +1,5 @@
+Slide:
+1) /arq/doc/tit ou //tit ou /*/*/tit ou /arq//tit
+2) 
+3) //@t ou /arq/doc/tit/file/@t (acho eu)
+

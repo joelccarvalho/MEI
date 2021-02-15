@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT agenda (entrada|grupo)+ >
+<!ELEMENT entrada (nome, email, telefone?)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT telefone (#PCDATA)>
+
+<!ATTLIST 
+        entrada ident ID #REQUIRED 
+        tipo (empresa | pessoa) "empresa">
+
+<!ELEMENT grupo (entrada|grupo|ref)+ >
+
+<!ATTLIST grupo ident ID #REQUIRED>
+
+<!ELEMENT ref EMPTY>
+
+<!ATTLIST ref apontado IDREF #REQUIRED>
+
+<!-- EXERCICIO TIPICO: http://www4.di.uminho.pt/~jcr/AULAS/didac/RepFichas/site/fichas/pri2018-f1.html 2. -->

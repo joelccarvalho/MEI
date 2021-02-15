@@ -1,0 +1,31 @@
+1) 
+FOR airport IN airports
+ FILTER airport.vip == true
+RETURN {
+ "airport": airport.name,
+ "vip": airport.vip
+ }
+
+2) 
+FOR airport IN airports
+ FILTER airport.state == "FL"
+RETURN airport
+
+
+3)
+FOR airport IN airports
+    FILTER airport.name == "William B Hartsfield-Atlanta Intl"
+        FOR flight in flights
+            FILTER flight._from == airport._id
+RETURN flight
+
+
+4)
+FOR airport IN airports
+    FILTER airport.name == "William B Hartsfield-Atlanta Intl"
+        FOR airp in airports
+            FILTER airp.name == "LaGuardia"
+        FOR flight in flights
+            FILTER flight._from == airport._id
+            AND flight._to == airp._id
+RETURN flight

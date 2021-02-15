@@ -1,0 +1,25 @@
+{
+  "name": "galunos",
+  "version": "1.0.0",
+  "description": "Gestão de Alunos (DAW2020)",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "express": "^4.17.1",
+    "json-server": "^0.16.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.6",
+    "oracledb": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server2.js",
+    "devstart": "nodemon server2.js"
+  },
+  "author": "jcc",
+  "license": "ISC"
+}

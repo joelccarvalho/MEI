@@ -1,0 +1,475 @@
+]0;~/PCA e LDA/PCA+LDA/Eigenfaces[01;34m~/PCA e LDA/PCA+LDA/Eigenfaces[00m$ ls
+[0m[01;35m1.pgm[0m   2018-11-11-214529.term  [01;35m5.pgm[0m  [01;35m8.pgm[0m            README            [34;42ms1[0m   [34;42ms12[0m  [34;42ms15[0m  [34;42ms18[0m  [34;42ms20[0m  [34;42ms23[0m  [34;42ms26[0m  [34;42ms29[0m  [34;42ms31[0m  [34;42ms34[0m  [34;42ms37[0m  [34;42ms4[0m   [34;42ms6[0m  [34;42ms9[0m
+[01;35m10.pgm[0m  [01;35m3.pgm[0m                   [01;35m6.pgm[0m  [01;35m9.pgm[0m            [01;31matt_faces.zip[0m     [34;42ms10[0m  [34;42ms13[0m  [34;42ms16[0m  [34;42ms19[0m  [34;42ms21[0m  [34;42ms24[0m  [34;42ms27[0m  [34;42ms3[0m   [34;42ms32[0m  [34;42ms35[0m  [34;42ms38[0m  [34;42ms40[0m  [34;42ms7[0m
+[01;35m2.pgm[0m   [01;35m4.pgm[0m                   [01;35m7.pgm[0m  [01;31mATTfaces.tar.xz[0m  eigenfaces.ipynb  [34;42ms11[0m  [34;42ms14[0m  [34;42ms17[0m  [34;42ms2[0m   [34;42ms22[0m  [34;42ms25[0m  [34;42ms28[0m  [34;42ms30[0m  [34;42ms33[0m  [34;42ms36[0m  [34;42ms39[0m  [34;42ms5[0m   [34;42ms8[0m
+]0;~/PCA e LDA/PCA+LDA/Eigenfaces[01;34m~/PCA e LDA/PCA+LDA/Eigenfaces[00m$ unzip att_faces.zip _[K
+Archive:  att_faces.zip
+replace README? [y]es, [n]o, [A]ll, [N]one, [r]ename: A
+  inflating: README                  
+  inflating: s1/6.pgm                
+  inflating: s1/7.pgm                
+  inflating: s1/8.pgm                
+  inflating: s1/9.pgm                
+  inflating: s1/10.pgm               
+  inflating: s1/1.pgm                
+  inflating: s1/2.pgm                
+  inflating: s1/3.pgm                
+  inflating: s1/4.pgm                
+  inflating: s1/5.pgm                
+  inflating: s2/6.pgm                
+  inflating: s2/7.pgm                
+  inflating: s2/8.pgm                
+  inflating: s2/9.pgm                
+  inflating: s2/10.pgm               
+  inflating: s2/1.pgm                
+  inflating: s2/2.pgm                
+  inflating: s2/3.pgm                
+  inflating: s2/4.pgm                
+  inflating: s2/5.pgm                
+  inflating: s3/6.pgm                
+  inflating: s3/7.pgm                
+  inflating: s3/8.pgm                
+  inflating: s3/9.pgm                
+  inflating: s3/10.pgm               
+  inflating: s3/1.pgm                
+  inflating: s3/2.pgm                
+  inflating: s3/3.pgm                
+  inflating: s3/4.pgm                
+  inflating: s3/5.pgm                
+  inflating: s4/6.pgm                
+  inflating: s4/7.pgm                
+  inflating: s4/8.pgm                
+  inflating: s4/9.pgm                
+  inflating: s4/10.pgm               
+  inflating: s4/1.pgm                
+  inflating: s4/2.pgm                
+  inflating: s4/3.pgm                
+  inflating: s4/4.pgm                
+  inflating: s4/5.pgm                
+  inflating: s5/6.pgm                
+  inflating: s5/7.pgm                
+  inflating: s5/8.pgm                
+  inflating: s5/9.pgm                
+  inflating: s5/10.pgm               
+  inflating: s5/1.pgm                
+  inflating: s5/2.pgm                
+  inflating: s5/3.pgm                
+  inflating: s5/4.pgm                
+  inflating: s5/5.pgm                
+  inflating: s6/6.pgm                
+  inflating: s6/7.pgm                
+  inflating: s6/8.pgm                
+  inflating: s6/9.pgm                
+  inflating: s6/10.pgm               
+  inflating: s6/1.pgm                
+  inflating: s6/2.pgm                
+  inflating: s6/3.pgm                
+  inflating: s6/4.pgm                
+  inflating: s6/5.pgm                
+  inflating: s7/6.pgm                
+  inflating: s7/7.pgm                
+  inflating: s7/8.pgm                
+  inflating: s7/9.pgm                
+  inflating: s7/10.pgm               
+  inflating: s7/1.pgm                
+  inflating: s7/2.pgm                
+  inflating: s7/3.pgm                
+  inflating: s7/4.pgm                
+  inflating: s7/5.pgm                
+  inflating: s8/6.pgm                
+  inflating: s8/7.pgm                
+  inflating: s8/8.pgm                
+  inflating: s8/9.pgm                
+  inflating: s8/10.pgm               
+  inflating: s8/1.pgm                
+  inflating: s8/2.pgm                
+  inflating: s8/3.pgm                
+  inflating: s8/4.pgm                
+  inflating: s8/5.pgm                
+  inflating: s9/6.pgm                
+  inflating: s9/7.pgm                
+  inflating: s9/8.pgm                
+  inflating: s9/9.pgm                
+  inflating: s9/10.pgm               
+  inflating: s9/1.pgm                
+  inflating: s9/2.pgm                
+  inflating: s9/3.pgm                
+  inflating: s9/4.pgm                
+  inflating: s9/5.pgm                
+  inflating: s10/6.pgm               
+  inflating: s10/7.pgm               
+  inflating: s10/8.pgm               
+  inflating: s10/9.pgm               
+  inflating: s10/10.pgm              
+  inflating: s10/1.pgm               
+  inflating: s10/2.pgm               
+  inflating: s10/3.pgm               
+  inflating: s10/4.pgm               
+  inflating: s10/5.pgm               
+  inflating: s11/6.pgm               
+  inflating: s11/7.pgm               
+  inflating: s11/8.pgm               
+  inflating: s11/9.pgm               
+  inflating: s11/10.pgm              
+  inflating: s11/1.pgm               
+  inflating: s11/2.pgm               
+  inflating: s11/3.pgm               
+  inflating: s11/4.pgm               
+  inflating: s11/5.pgm               
+  inflating: s12/6.pgm               
+  inflating: s12/7.pgm               
+  inflating: s12/8.pgm               
+  inflating: s12/9.pgm               
+  inflating: s12/10.pgm              
+  inflating: s12/1.pgm               
+  inflating: s12/2.pgm               
+  inflating: s12/3.pgm               
+  inflating: s12/4.pgm               
+  inflating: s12/5.pgm               
+  inflating: s13/6.pgm               
+  inflating: s13/7.pgm               
+  inflating: s13/8.pgm               
+  inflating: s13/9.pgm               
+  inflating: s13/10.pgm              
+  inflating: s13/1.pgm               
+  inflating: s13/2.pgm               
+  inflating: s13/3.pgm               
+  inflating: s13/4.pgm               
+  inflating: s13/5.pgm               
+  inflating: s14/6.pgm               
+  inflating: s14/7.pgm               
+  inflating: s14/8.pgm               
+  inflating: s14/9.pgm               
+  inflating: s14/10.pgm              
+  inflating: s14/1.pgm               
+  inflating: s14/2.pgm               
+  inflating: s14/3.pgm               
+  inflating: s14/4.pgm               
+  inflating: s14/5.pgm               
+  inflating: s15/6.pgm               
+  inflating: s15/7.pgm               
+  inflating: s15/8.pgm               
+  inflating: s15/9.pgm               
+  inflating: s15/10.pgm              
+  inflating: s15/1.pgm               
+  inflating: s15/2.pgm               
+  inflating: s15/3.pgm               
+  inflating: s15/4.pgm               
+  inflating: s15/5.pgm               
+  inflating: s16/6.pgm               
+  inflating: s16/7.pgm               
+  inflating: s16/8.pgm               
+  inflating: s16/9.pgm               
+  inflating: s16/10.pgm              
+  inflating: s16/1.pgm               
+  inflating: s16/2.pgm               
+  inflating: s16/3.pgm               
+  inflating: s16/4.pgm               
+  inflating: s16/5.pgm               
+  inflating: s17/6.pgm               
+  inflating: s17/7.pgm               
+  inflating: s17/8.pgm               
+  inflating: s17/9.pgm               
+  inflating: s17/10.pgm              
+  inflating: s17/1.pgm               
+  inflating: s17/2.pgm               
+  inflating: s17/3.pgm               
+  inflating: s17/4.pgm               
+  inflating: s17/5.pgm               
+  inflating: s18/6.pgm               
+  inflating: s18/7.pgm               
+  inflating: s18/8.pgm               
+  inflating: s18/9.pgm               
+  inflating: s18/10.pgm              
+  inflating: s18/1.pgm               
+  inflating: s18/2.pgm               
+  inflating: s18/3.pgm               
+  inflating: s18/4.pgm               
+  inflating: s18/5.pgm               
+  inflating: s19/6.pgm               
+  inflating: s19/7.pgm               
+  inflating: s19/8.pgm               
+  inflating: s19/9.pgm               
+  inflating: s19/10.pgm              
+  inflating: s19/1.pgm               
+  inflating: s19/2.pgm               
+  inflating: s19/3.pgm               
+  inflating: s19/4.pgm               
+  inflating: s19/5.pgm               
+  inflating: s20/6.pgm               
+  inflating: s20/7.pgm               
+  inflating: s20/8.pgm               
+  inflating: s20/9.pgm               
+  inflating: s20/10.pgm              
+  inflating: s20/1.pgm               
+  inflating: s20/2.pgm               
+  inflating: s20/3.pgm               
+  inflating: s20/4.pgm               
+  inflating: s20/5.pgm               
+  inflating: s21/6.pgm               
+  inflating: s21/7.pgm               
+  inflating: s21/8.pgm               
+  inflating: s21/9.pgm               
+  inflating: s21/10.pgm              
+  inflating: s21/1.pgm               
+  inflating: s21/2.pgm               
+  inflating: s21/3.pgm               
+  inflating: s21/4.pgm               
+  inflating: s21/5.pgm               
+  inflating: s22/6.pgm               
+  inflating: s22/7.pgm               
+  inflating: s22/8.pgm               
+  inflating: s22/9.pgm               
+  inflating: s22/10.pgm              
+  inflating: s22/1.pgm               
+  inflating: s22/2.pgm               
+  inflating: s22/3.pgm               
+  inflating: s22/4.pgm               
+  inflating: s22/5.pgm               
+  inflating: s23/6.pgm               
+  inflating: s23/7.pgm               
+  inflating: s23/8.pgm               
+  inflating: s23/9.pgm               
+  inflating: s23/10.pgm              
+  inflating: s23/1.pgm               
+  inflating: s23/2.pgm               
+  inflating: s23/3.pgm               
+  inflating: s23/4.pgm               
+  inflating: s23/5.pgm               
+  inflating: s24/6.pgm               
+  inflating: s24/7.pgm               
+  inflating: s24/8.pgm               
+  inflating: s24/9.pgm               
+  inflating: s24/10.pgm              
+  inflating: s24/1.pgm               
+  inflating: s24/2.pgm               
+  inflating: s24/3.pgm               
+  inflating: s24/4.pgm               
+  inflating: s24/5.pgm               
+  inflating: s25/6.pgm               
+  inflating: s25/7.pgm               
+  inflating: s25/8.pgm               
+  inflating: s25/9.pgm               
+  inflating: s25/10.pgm              
+  inflating: s25/1.pgm               
+  inflating: s25/2.pgm               
+  inflating: s25/3.pgm               
+  inflating: s25/4.pgm               
+  inflating: s25/5.pgm               
+  inflating: s26/6.pgm               
+  inflating: s26/7.pgm               
+  inflating: s26/8.pgm               
+  inflating: s26/9.pgm               
+  inflating: s26/10.pgm              
+  inflating: s26/1.pgm               
+  inflating: s26/2.pgm               
+  inflating: s26/3.pgm               
+  inflating: s26/4.pgm               
+  inflating: s26/5.pgm               
+  inflating: s27/6.pgm               
+  inflating: s27/7.pgm               
+  inflating: s27/8.pgm               
+  inflating: s27/9.pgm               
+  inflating: s27/10.pgm              
+  inflating: s27/1.pgm               
+  inflating: s27/2.pgm               
+  inflating: s27/3.pgm               
+  inflating: s27/4.pgm               
+  inflating: s27/5.pgm               
+  inflating: s28/6.pgm               
+  inflating: s28/7.pgm               
+  inflating: s28/8.pgm               
+  inflating: s28/9.pgm               
+  inflating: s28/10.pgm              
+  inflating: s28/1.pgm               
+  inflating: s28/2.pgm               
+  inflating: s28/3.pgm               
+  inflating: s28/4.pgm               
+  inflating: s28/5.pgm               
+  inflating: s29/6.pgm               
+  inflating: s29/7.pgm               
+  inflating: s29/8.pgm               
+  inflating: s29/9.pgm               
+  inflating: s29/10.pgm              
+  inflating: s29/1.pgm               
+  inflating: s29/2.pgm               
+  inflating: s29/3.pgm               
+  inflating: s29/4.pgm               
+  inflating: s29/5.pgm               
+  inflating: s30/6.pgm               
+  inflating: s30/7.pgm               
+  inflating: s30/8.pgm               
+  inflating: s30/9.pgm               
+  inflating: s30/10.pgm              
+  inflating: s30/1.pgm               
+  inflating: s30/2.pgm               
+  inflating: s30/3.pgm               
+  inflating: s30/4.pgm               
+  inflating: s30/5.pgm               
+  inflating: s31/6.pgm               
+  inflating: s31/7.pgm               
+  inflating: s31/8.pgm               
+  inflating: s31/9.pgm               
+  inflating: s31/10.pgm              
+  inflating: s31/1.pgm               
+  inflating: s31/2.pgm               
+  inflating: s31/3.pgm               
+  inflating: s31/4.pgm               
+  inflating: s31/5.pgm               
+  inflating: s32/6.pgm               
+  inflating: s32/7.pgm               
+  inflating: s32/8.pgm               
+  inflating: s32/9.pgm               
+  inflating: s32/10.pgm              
+  inflating: s32/1.pgm               
+  inflating: s32/2.pgm               
+  inflating: s32/3.pgm               
+  inflating: s32/4.pgm               
+  inflating: s32/5.pgm               
+  inflating: s33/6.pgm               
+  inflating: s33/7.pgm               
+  inflating: s33/8.pgm               
+  inflating: s33/9.pgm               
+  inflating: s33/10.pgm              
+  inflating: s33/1.pgm               
+  inflating: s33/2.pgm               
+  inflating: s33/3.pgm               
+  inflating: s33/4.pgm               
+  inflating: s33/5.pgm               
+  inflating: s34/6.pgm               
+  inflating: s34/7.pgm               
+  inflating: s34/8.pgm               
+  inflating: s34/9.pgm               
+  inflating: s34/10.pgm              
+  inflating: s34/1.pgm               
+  inflating: s34/2.pgm               
+  inflating: s34/3.pgm               
+  inflating: s34/4.pgm               
+  inflating: s34/5.pgm               
+  inflating: s35/6.pgm               
+  inflating: s35/7.pgm               
+  inflating: s35/8.pgm               
+  inflating: s35/9.pgm               
+  inflating: s35/10.pgm              
+  inflating: s35/1.pgm               
+  inflating: s35/2.pgm               
+  inflating: s35/3.pgm               
+  inflating: s35/4.pgm               
+  inflating: s35/5.pgm               
+  inflating: s36/6.pgm               
+  inflating: s36/7.pgm               
+  inflating: s36/8.pgm               
+  inflating: s36/9.pgm               
+  inflating: s36/10.pgm              
+  inflating: s36/1.pgm               
+  inflating: s36/2.pgm               
+  inflating: s36/3.pgm               
+  inflating: s36/4.pgm               
+  inflating: s36/5.pgm               
+  inflating: s37/6.pgm               
+  inflating: s37/7.pgm               
+  inflating: s37/8.pgm               
+  inflating: s37/9.pgm               
+  inflating: s37/10.pgm              
+  inflating: s37/1.pgm               
+  inflating: s37/2.pgm               
+  inflating: s37/3.pgm               
+  inflating: s37/4.pgm               
+  inflating: s37/5.pgm               
+  inflating: s38/6.pgm               
+  inflating: s38/7.pgm               
+  inflating: s38/8.pgm               
+  inflating: s38/9.pgm               
+  inflating: s38/10.pgm              
+  inflating: s38/1.pgm               
+  inflating: s38/2.pgm               
+  inflating: s38/3.pgm               
+  inflating: s38/4.pgm               
+  inflating: s38/5.pgm               
+  inflating: s39/6.pgm               
+  inflating: s39/7.pgm               
+  inflating: s39/8.pgm               
+  inflating: s39/9.pgm               
+  inflating: s39/10.pgm              
+  inflating: s39/1.pgm               
+  inflating: s39/2.pgm               
+  inflating: s39/3.pgm               
+  inflating: s39/4.pgm               
+  inflating: s39/5.pgm               
+  inflating: s40/6.pgm               
+  inflating: s40/7.pgm               
+  inflating: s40/8.pgm               
+  inflating: s40/9.pgm               
+  inflating: s40/10.pgm              
+  inflating: s40/1.pgm               
+  inflating: s40/2.pgm               
+  inflating: s40/3.pgm               
+  inflating: s40/4.pgm               
+  inflating: s40/5.pgm               
+]0;~/PCA e LDA/PCA+LDA/Eigenfaces[01;34m~/PCA e LDA/PCA+LDA/Eigenfaces[00m$ la[Ks
+[0m[01;35m1.pgm[0m   2018-11-11-214529.term  [01;35m5.pgm[0m  [01;35m8.pgm[0m            README            [34;42ms1[0m   [34;42ms12[0m  [34;42ms15[0m  [34;42ms18[0m  [34;42ms20[0m  [34;42ms23[0m  [34;42ms26[0m  [34;42ms29[0m  [34;42ms31[0m  [34;42ms34[0m  [34;42ms37[0m  [34;42ms4[0m   [34;42ms6[0m  [34;42ms9[0m
+[01;35m10.pgm[0m  [01;35m3.pgm[0m                   [01;35m6.pgm[0m  [01;35m9.pgm[0m            [01;31matt_faces.zip[0m     [34;42ms10[0m  [34;42ms13[0m  [34;42ms16[0m  [34;42ms19[0m  [34;42ms21[0m  [34;42ms24[0m  [34;42ms27[0m  [34;42ms3[0m   [34;42ms32[0m  [34;42ms35[0m  [34;42ms38[0m  [34;42ms40[0m  [34;42ms7[0m
+[01;35m2.pgm[0m   [01;35m4.pgm[0m                   [01;35m7.pgm[0m  [01;31mATTfaces.tar.xz[0m  eigenfaces.ipynb  [34;42ms11[0m  [34;42ms14[0m  [34;42ms17[0m  [34;42ms2[0m   [34;42ms22[0m  [34;42ms25[0m  [34;42ms28[0m  [34;42ms30[0m  [34;42ms33[0m  [34;42ms36[0m  [34;42ms39[0m  [34;42ms5[0m   [34;42ms8[0m
+]0;~/PCA e LDA/PCA+LDA/Eigenfaces[01;34m~/PCA e LDA/PCA+LDA/Eigenfaces[00m$ tar -xf ATTfaces.tar.xz 
+]0;~/PCA e LDA/PCA+LDA/Eigenfaces[01;34m~/PCA e LDA/PCA+LDA/Eigenfaces[00m$ ls
+[0m[01;35m1.pgm[0m   2018-11-11-214529.term  [01;35m5.pgm[0m  [01;35m8.pgm[0m     [01;31mATTfaces.tar.xz[0m  eigenfaces.ipynb  [34;42ms11[0m  [34;42ms14[0m  [34;42ms17[0m  [34;42ms2[0m   [34;42ms22[0m  [34;42ms25[0m  [34;42ms28[0m  [34;42ms30[0m  [34;42ms33[0m  [34;42ms36[0m  [34;42ms39[0m  [34;42ms5[0m  [34;42ms8[0m
+[01;35m10.pgm[0m  [01;35m3.pgm[0m                   [01;35m6.pgm[0m  [01;35m9.pgm[0m     README           [34;42ms1[0m                [34;42ms12[0m  [34;42ms15[0m  [34;42ms18[0m  [34;42ms20[0m  [34;42ms23[0m  [34;42ms26[0m  [34;42ms29[0m  [34;42ms31[0m  [34;42ms34[0m  [34;42ms37[0m  [34;42ms4[0m   [34;42ms6[0m  [34;42ms9[0m
+[01;35m2.pgm[0m   [01;35m4.pgm[0m                   [01;35m7.pgm[0m  [01;34mATTfaces[0m  [01;31matt_faces.zip[0m    [34;42ms10[0m               [34;42ms13[0m  [34;42ms16[0m  [34;42ms19[0m  [34;42ms21[0m  [34;42ms24[0m  [34;42ms27[0m  [34;42ms3[0m   [34;42ms32[0m  [34;42ms35[0m  [34;42ms38[0m  [34;42ms40[0m  [34;42ms7[0m
+]0;~/PCA e LDA/PCA+LDA/Eigenfaces[01;34m~/PCA e LDA/PCA+LDA/Eigenfaces[00m$ less README 
+[?1049h[22;0;0t[?1h=The ORL face database
+---------------------
+
+This directory contains a set of faces taken between April 1992 and
+April 1994 at the Olivetti Research Laboratory in Cambridge, UK.
+
+There are 10 different images of 40 distinct subjects. For some of the
+subjects, the images were taken at different times, varying lighting
+slightly, facial expressions (open/closed eyes, smiling/non-smiling)
+and facial details (glasses/no-glasses).  All the images are taken
+against a dark homogeneous background and the subjects are in
+up-right, frontal position (with tolerance for some side movement).
+
+The files are in PGM format and can be conveniently viewed using the 'xv'
+program. The size of each image is 92x112, 8-bit grey levels. The images
+are organised in 40 directories (one for each subject) named as:
+
+                sX
+
+where X indicates the subject number (between 1 and 40). In each directory
+there are 10 different images of the selected subject named as:
+
+                Y.pgm
+
+where Y indicates which image for the specific subject (between 1 and 10).
+
+When using these images, please give credit to Olivetti Research Laboratory.
+A convenient reference is the face recognition work which uses some of
+these images:
+
+ F. Samaria and A. Harter 
+  "Parameterisation of a stochastic model for human face identification"
+  2nd IEEE Workshop on Applications of Computer Vision
+  December 1994, Sarasota (Florida).
+
+The paper is available via anonymous ftp from quince.cam-orl.co.uk and is
+stored in pub/users/fs/IEEE_workshop.ps.Z
+
+If you have any question, please email Ferdinando Samaria: fs@cam-orl.co.uk
+[;7mREADME (END)[;27m[K[K[K[;7m(END)[;27m[K[K [KESCESC[KOO[KBB[K[K[;7m(END)[;27m[K[K[?1l>[?1049l[23;0;0t]0;~/PCA e LDA/PCA+LDA/Eigenfaces[01;34m~/PCA e LDA/PCA+LDA/Eigenfaces[00m$ ls
+[0m[01;35m1.pgm[0m   2018-11-11-214529.term  [01;35m5.pgm[0m  [01;35m8.pgm[0m     [01;31mATTfaces.tar.xz[0m  eigenfaces.ipynb  [34;42ms11[0m  [34;42ms14[0m  [34;42ms17[0m  [34;42ms2[0m   [34;42ms22[0m  [34;42ms25[0m  [34;42ms28[0m  [34;42ms30[0m  [34;42ms33[0m  [34;42ms36[0m  [34;42ms39[0m  [34;42ms5[0m  [34;42ms8[0m
+[01;35m10.pgm[0m  [01;35m3.pgm[0m                   [01;35m6.pgm[0m  [01;35m9.pgm[0m     README           [34;42ms1[0m                [34;42ms12[0m  [34;42ms15[0m  [34;42ms18[0m  [34;42ms20[0m  [34;42ms23[0m  [34;42ms26[0m  [34;42ms29[0m  [34;42ms31[0m  [34;42ms34[0m  [34;42ms37[0m  [34;42ms4[0m   [34;42ms6[0m  [34;42ms9[0m
+[01;35m2.pgm[0m   [01;35m4.pgm[0m                   [01;35m7.pgm[0m  [01;34mATTfaces[0m  [01;31matt_faces.zip[0m    [34;42ms10[0m               [34;42ms13[0m  [34;42ms16[0m  [34;42ms19[0m  [34;42ms21[0m  [34;42ms24[0m  [34;42ms27[0m  [34;42ms3[0m   [34;42ms32[0m  [34;42ms35[0m  [34;42ms38[0m  [34;42ms40[0m  [34;42ms7[0m
+]0;~/PCA e LDA/PCA+LDA/Eigenfaces[01;34m~/PCA e LDA/PCA+LDA/Eigenfaces[00m$ ls
+[0m[01;35m1.pgm[0m   2018-11-11-214529.term  [01;35m5.pgm[0m  [01;35m8.pgm[0m     [01;31mATTfaces.tar.xz[0m  eigenfaces.ipynb  [34;42ms11[0m  [34;42ms14[0m  [34;42ms17[0m  [34;42ms2[0m   [34;42ms22[0m  [34;42ms25[0m  [34;42ms28[0m  [34;42ms30[0m  [34;42ms33[0m  [34;42ms36[0m  [34;42ms39[0m  [34;42ms5[0m  [34;42ms8[0m
+[01;35m10.pgm[0m  [01;35m3.pgm[0m                   [01;35m6.pgm[0m  [01;35m9.pgm[0m     README           [34;42ms1[0m                [34;42ms12[0m  [34;42ms15[0m  [34;42ms18[0m  [34;42ms20[0m  [34;42ms23[0m  [34;42ms26[0m  [34;42ms29[0m  [34;42ms31[0m  [34;42ms34[0m  [34;42ms37[0m  [34;42ms4[0m   [34;42ms6[0m  [34;42ms9[0m
+[01;35m2.pgm[0m   [01;35m4.pgm[0m                   [01;35m7.pgm[0m  [01;34mATTfaces[0m  [01;31matt_faces.zip[0m    [34;42ms10[0m               [34;42ms13[0m  [34;42ms16[0m  [34;42ms19[0m  [34;42ms21[0m  [34;42ms24[0m  [34;42ms27[0m  [34;42ms3[0m   [34;42ms32[0m  [34;42ms35[0m  [34;42ms38[0m  [34;42ms40[0m  [34;42ms7[0m
+]0;~/PCA e LDA/PCA+LDA/Eigenfaces[01;34m~/PCA e LDA/PCA+LDA/Eigenfaces[00m$ ls
+[0m[01;35m1.pgm[0m   2018-11-11-214529.term  [01;35m5.pgm[0m  [01;35m8.pgm[0m     [01;31mATTfaces.tar.xz[0m  eigenfaces.ipynb  [34;42ms11[0m  [34;42ms14[0m  [34;42ms17[0m  [34;42ms2[0m   [34;42ms22[0m  [34;42ms25[0m  [34;42ms28[0m  [34;42ms30[0m  [34;42ms33[0m  [34;42ms36[0m  [34;42ms39[0m  [34;42ms5[0m  [34;42ms8[0m
+[01;35m10.pgm[0m  [01;35m3.pgm[0m                   [01;35m6.pgm[0m  [01;35m9.pgm[0m     README           [34;42ms1[0m                [34;42ms12[0m  [34;42ms15[0m  [34;42ms18[0m  [34;42ms20[0m  [34;42ms23[0m  [34;42ms26[0m  [34;42ms29[0m  [34;42ms31[0m  [34;42ms34[0m  [34;42ms37[0m  [34;42ms4[0m   [34;42ms6[0m  [34;42ms9[0m
+[01;35m2.pgm[0m   [01;35m4.pgm[0m                   [01;35m7.pgm[0m  [01;34mATTfaces[0m  [01;31matt_faces.zip[0m    [34;42ms10[0m               [34;42ms13[0m  [34;42ms16[0m  [34;42ms19[0m  [34;42ms21[0m  [34;42ms24[0m  [34;42ms27[0m  [34;42ms3[0m   [34;42ms32[0m  [34;42ms35[0m  [34;42ms38[0m  [34;42ms40[0m  [34;42ms7[0m
+]0;~/PCA e LDA/PCA+LDA/Eigenfaces[01;34m~/PCA e LDA/PCA+LDA/Eigenfaces[00m$ ls
+[0m[01;35m1.pgm[0m   2018-11-11-214529.term  [01;35m5.pgm[0m  [01;35m8.pgm[0m     [01;31mATTfaces.tar.xz[0m  eigenfaces.ipynb  [34;42ms11[0m  [34;42ms14[0m  [34;42ms17[0m  [34;42ms2[0m   [34;42ms22[0m  [34;42ms25[0m  [34;42ms28[0m  [34;42ms30[0m  [34;42ms33[0m  [34;42ms36[0m  [34;42ms39[0m  [34;42ms5[0m  [34;42ms8[0m
+[01;35m10.pgm[0m  [01;35m3.pgm[0m                   [01;35m6.pgm[0m  [01;35m9.pgm[0m     README           [34;42ms1[0m                [34;42ms12[0m  [34;42ms15[0m  [34;42ms18[0m  [34;42ms20[0m  [34;42ms23[0m  [34;42ms26[0m  [34;42ms29[0m  [34;42ms31[0m  [34;42ms34[0m  [34;42ms37[0m  [34;42ms4[0m   [34;42ms6[0m  [34;42ms9[0m
+[01;35m2.pgm[0m   [01;35m4.pgm[0m                   [01;35m7.pgm[0m  [01;34mATTfaces[0m  [01;31matt_faces.zip[0m    [34;42ms10[0m               [34;42ms13[0m  [34;42ms16[0m  [34;42ms19[0m  [34;42ms21[0m  [34;42ms24[0m  [34;42ms27[0m  [34;42ms3[0m   [34;42ms32[0m  [34;42ms35[0m  [34;42ms38[0m  [34;42ms40[0m  [34;42ms7[0m
+]0;~/PCA e LDA/PCA+LDA/Eigenfaces[01;34m~/PCA e LDA/PCA+LDA/Eigenfaces[00m$ exit
+]0;~/PCA e LDA/PCA+LDA/Eigenfaces[01;34m~/PCA e LDA/PCA+LDA/Eigenfaces[00m$ 

@@ -1,0 +1,27 @@
+nome {
+    color: red;
+}
+
+local {
+    color: blue;
+}
+
+quadra, terceto, verso {
+    display: block;
+}
+
+quadra, terceto {
+    margin: 10px;
+}
+
+titulo {
+    display: block;
+    font-size: 24pt;
+    font-weight: bold;
+    margin: 10px;
+}
+
+poema {
+    display: block;
+    margin: 40px;
+}

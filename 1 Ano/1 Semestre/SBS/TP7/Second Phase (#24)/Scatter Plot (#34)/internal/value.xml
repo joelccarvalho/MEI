@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="viewValue">
+<entry key="chartTitle" type="xstring" value="Elbow: k-Medoids"/>
+<entry key="chartSubtitle" type="xstring" value=""/>
+<entry key="xCol" type="xstring" value="Num Clusters"/>
+<entry key="yCol" type="xstring" value="MAE"/>
+<entry key="xAxisLabel" type="xstring" value=""/>
+<entry key="yAxisLabel" type="xstring" value=""/>
+<entry key="xAxisMin" type="xstring" value="-0.8834409839183976"/>
+<entry key="xAxisMax" type="xstring" value="11.969601694865682"/>
+<entry key="yAxisMin" type="xstring" value="0.659275169549641"/>
+<entry key="yAxisMax" type="xstring" value="1.297788774928812"/>
+<entry key="dot_size" type="xstring" value="3"/>
+<config key="selectedKeys"/>
+<entry key="publishSelection" type="xboolean" value="true"/>
+<entry key="subscribeSelection" type="xboolean" value="true"/>
+<entry key="showSelectedOnly" type="xboolean" value="false"/>
+<entry key="subscribeFilter" type="xboolean" value="true"/>
+<entry key="showLegend" type="xboolean" value="false"/>
+</config>
